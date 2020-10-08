@@ -11,7 +11,13 @@ app.get("/about", (req, res) =>{
 	res.render("about");
 });
 
-const port = process.env.PORT || 3000;
-app.listen(3000, function(){
-	console.log("Deploy Demo Has Started");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function(){
+	console.log(`Deploy Demo Has Started On Port ${ PORT }`);
+});
+
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
