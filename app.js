@@ -11,6 +11,7 @@ app.get("/about", (req, res) =>{
 	res.render("about");
 });
 
+const port = process.env.PORT || 3000;
 app.listen(3000, function(){
 	console.log("Deploy Demo Has Started");
 });
